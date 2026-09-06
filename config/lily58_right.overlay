@@ -15,10 +15,10 @@
  * Wiring:
  *   TPS43 VDD -> 3V            TPS43 GND -> GND
  *   TPS43 SDA -> nice_nano D2   TPS43 SCL -> nice_nano D3
- *   TPS43 RDY -> nice_nano D21  TPS43 RST -> nice_nano D20
+ *   TPS43 RDY -> nice_nano D21  TPS43 RST -> nice_nano D20 - changed to CS pin
  */
 
-&i2c0 {
+&i2c0 {     
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
 
@@ -27,7 +27,7 @@
         reg = <0x74>;
         status = "okay";
 
-        rst-gpios = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
+        rst-gpios = <&pro_micro 06 GPIO_ACTIVE_HIGH>;
         rdy-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
 
         enable-power-management;
