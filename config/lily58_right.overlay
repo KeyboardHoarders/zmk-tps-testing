@@ -47,7 +47,7 @@
         // Uncomment/adjust after test-fitting the module, depending on
         // how it ends up mounted (rotation/mirroring vs. the datasheet
         // origin):
-        // switch-xy;
+           switch-xy;
         // invert-x;
         // invert-y;
         // invert-scroll-y;
