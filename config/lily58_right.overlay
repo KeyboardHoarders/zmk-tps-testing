@@ -28,7 +28,7 @@
         status = "okay";
 
         rst-gpios = <&pro_micro 06 GPIO_ACTIVE_HIGH>;
-        rdy-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
+        rdy-gpios = <&pro_micro 31 GPIO_ACTIVE_HIGH>;
 
         enable-power-management;
 
